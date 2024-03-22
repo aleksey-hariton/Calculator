@@ -28,21 +28,20 @@ pipeline {
                 sh 'mvn test'
             }
         }
-        stage('Deploy') {
-            steps {
-                // Add deployment steps here
-            }
-        }
+        // stage('Deploy') {
+        //     steps {
+        //     }
+        // }
     }
-    post {
-        always {
-            // Clean up steps here
-        }
-        success {
-            // Success notification or steps here
-        }
-        failure {
-            // Failure notification or steps here
-        }
-    }
+    // post {
+    //     always {
+    //         // Clean up steps here
+    //     }
+    //     success {
+    //         // Success notification or steps here
+    //     }
+    //     failure {
+    //         // Failure notification or steps here
+    //     }
+    // }
 }

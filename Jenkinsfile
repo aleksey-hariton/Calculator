@@ -6,9 +6,9 @@ pipeline {
                 spec:
                 containers:
                 - name: maven
-                    image: "maven:alpine"
-                    command: ["cat"]
-                    tty: true
+                  image: "maven:alpine"
+                  command: ["cat"]
+                  tty: true
             """
         }
     }

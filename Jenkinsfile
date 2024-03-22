@@ -4,11 +4,11 @@ pipeline {
             yaml """
                 kind: Pod
                 spec:
-                containers:
-                - name: maven
-                  image: "maven:alpine"
-                  command: ["cat"]
-                  tty: true
+                  containers:
+                  - name: maven
+                    image: maven:alpine
+                    command: ["cat"]
+                    tty: true
             """
         }
     }
